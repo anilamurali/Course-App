@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        ed1.setText("");
+                        ed2.setText("");
+                        ed3.setText("");
+                        ed4.setText("");
+                        ed5.setText("");
                         Toast.makeText(getApplicationContext(),error.toString(), Toast.LENGTH_SHORT).show();
 
                     }
